@@ -1,2 +1,2 @@
 # homework
-# This repository contains my homework at AT classes.
+# This repository contains my homework at AT courses.
