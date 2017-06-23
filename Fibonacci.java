@@ -8,10 +8,9 @@ public class Fibonacci {
     text = number.next();
       try {
         count = Integer.parseInt(text); 
-    } catch(NumberFormatException e) {
+      } catch(NumberFormatException e) {
         System.out.println("It is not a count");
-        System.exit(0);
-    }
+        System.exit(0); }
     final int max = 2147483647;
     boolean success = false;
     int sum;
@@ -25,9 +24,10 @@ public class Fibonacci {
             success = true;
             System.out.println("Your number is count from Fibonacci");
             break; }       
-        } if (success == false)
+        } if (success == false) {
             System.out.println("Your number is not count from Fibonacci");
         }
       }
+    }
   
     
