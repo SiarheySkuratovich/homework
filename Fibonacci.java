@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Fibonacci {
-  public static void main(String[] args) {
+  public static void main(String[] args) throws IOException {
     Scanner number = new Scanner(System.in);
     int count = number.nextInt();
     final int max = 2147483647;
