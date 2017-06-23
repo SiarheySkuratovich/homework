@@ -6,12 +6,13 @@ public class Fibonacci {
     int count = 0;
     Scanner number = new Scanner(System.in);
     text = number.next();
-      try {
-        count = Integer.parseInt(text); 
-      } catch(NumberFormatException e) {
-        System.out.println("It is not a count");
-        System.exit(0); 
-      }
+    try {
+      count = Integer.parseInt(text); 
+    } catch(NumberFormatException e) {
+      System.out.println("It is not a count");
+      System.exit(0); 
+    }
+    
     final int max = 2147483647;
     boolean success = false;
     int sum;
