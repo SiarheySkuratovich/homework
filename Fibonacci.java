@@ -9,9 +9,11 @@ public class Fibonacci {
     try {
       count = Integer.parseInt(text); 
     } catch(NumberFormatException e) {
-      System.out.println("It is not a count");
-      System.exit(0); 
-    }
+        while(!number.hasNextInt()) { 
+        System.out.println("It is not a count"); 
+        text=number.next(); 
+      }
+    } 
     
     final int max = 2147483647;
     boolean success = false;
