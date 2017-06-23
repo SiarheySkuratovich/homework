@@ -24,7 +24,8 @@ public class Fibonacci {
           if (count == sum) {
             success = true;
             System.out.println("Your number is count from Fibonacci");
-            break; }       
+            break; 
+          }       
         } if (success == false) {
             System.out.println("Your number is not count from Fibonacci");
         }
