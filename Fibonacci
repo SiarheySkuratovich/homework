@@ -15,7 +15,7 @@ public class Fibonacci {
       previous = sum;
         if (count == sum) {
           success = true;
-            System.out.println("Your number is count from Fibonacci"); } 
+          System.out.println("Your number is count from Fibonacci"); } 
       } if (success == false) {
           System.out.println("Your number is not count from Fibonacci");
       }  
