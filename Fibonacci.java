@@ -10,7 +10,8 @@ public class Fibonacci {
         count = Integer.parseInt(text); 
       } catch(NumberFormatException e) {
         System.out.println("It is not a count");
-        System.exit(0); }
+        System.exit(0); 
+      }
     final int max = 2147483647;
     boolean success = false;
     int sum;
