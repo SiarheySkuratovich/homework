@@ -8,7 +8,7 @@ public Fibonacci() {
     while (!number.hasNextInt()) {
       System.out.println("It is not a number");
       NotNumber = number.next();
-  } if(number.hasNextInt()) {
+  } if (number.hasNextInt()) {
       NotNumber = number.next();
       count = Integer.parseInt(NotNumber); }
   }
