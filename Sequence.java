@@ -38,9 +38,6 @@ public void toArray() {
 
 public void check() {
   boolean b = true;
-  for (Integer I: AL) {
-    System.out.print(I + "  ");
-  } 
   for (int j = 0; j < (AL.size() - 1); j++) {
   if (AL.get(j) > AL.get(j + 1)) {
     b = false;
