@@ -3,50 +3,45 @@ import java.util.ArrayList;
 
 public class Sequence {
   private String text;
-  private Integer count;
+  private Integer number;
   private String answer;
-  private boolean cont;
   private ArrayList<Integer> AL;
-  private Scanner number; 
+  private Scanner Input; 
   public boolean again() {
     String yes = "y";
-    number = new Scanner(System.in);
+    Input = new Scanner(System.in);
     System.out.println("Wish you continue, so input y? ");
-    answer = number.next();
-    if (answer.equals(yes)) {
-      return true;
-  } else {
-      return false; 
+    answer = Input.next();
+    return answer.equals(yes);
     }
   } 
 
 public void input() {
- while (!number.hasNextInt()) {
- System.out.println("It is not a count");
- text = number.next();
- } 
- if (number.hasNextInt()) {
-   text = number.next();
-   count = Integer.parseInt(text);
-   }
- }
+  while (!number.hasNextInt()) {
+  System.out.println("It is not a count");
+  text = Input.next();
+  } 
+  if (Input.hasNextInt()) {
+    text = Input.next();
+    count = Integer.parseInt(text);
+    }
+  }
 
 public Sequence() {
   AL = new ArrayList<Integer>();
-  number = new Scanner(System.in);
+  Input = new Scanner(System.in);
 }
 
 public void toArray() {
-  AL.add(count);
+  AL.add(number);
 }
 
 public void check() {
   boolean b = true;
   for (Integer I: AL) {
     System.out.print(I + "  ");
-    }
-  int j; 
-  for (j = 0; j < (AL.size() - 1); j++) {
+  } 
+  for (int j = 0; j < (AL.size() - 1); j++) {
   if (AL.get(j) > AL.get(j + 1)) {
     b = false;
     System.out.println("Not all elements is more then previous");
@@ -59,13 +54,13 @@ public void check() {
   }
 
 public static void main (String[] args) {
+  Sequence S = new Sequence(); 
   boolean ans = false;
-  Sequence S = new Sequence();      
-  do {
+  while (S.again()) {
     S.input();
     S.toArray();
-    ans = S.again();
-  } while (ans == true);
+    ans = S.again;
+  }
   S.check();
   }
 }
