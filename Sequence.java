@@ -9,17 +9,17 @@ public class Sequence {
   private String answer;
   private ArrayList<Integer> AL;
   private Scanner Input; 
-  /** 
-   * To re-query the data. 
-   */
-  public boolean again() {
-    String yes = "y";
-    Input = new Scanner(System.in);
-    System.out.println("Wish you continue, so input y? ");
-    answer = Input.next();
-    return answer.equals(yes);
-    }
-  } 
+/** 
+ * To re-query the data. 
+ */
+public boolean again() {
+  String yes = "y";
+  Input = new Scanner(System.in);
+  System.out.println("Wish you continue, so input y? ");
+  answer = Input.next();
+  return answer.equals(yes);
+  }
+} 
 /** 
  * To verify input data. 
  */
@@ -67,7 +67,7 @@ public static void main (String[] args) {
   while (S.again()) {
     S.input();
     S.toArray();
-    ans = S.again;
+    ans = S.again();
   }
   S.check();
   }
