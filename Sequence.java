@@ -1,12 +1,13 @@
 import java.util.Scanner;
 import java.util.ArrayList;
-
+/** To determine the positive sequence. */
 public class Sequence {
   private String text;
   private Integer number;
   private String answer;
   private ArrayList<Integer> AL;
   private Scanner Input; 
+  /** To re-query the data. */
   public boolean again() {
     String yes = "y";
     Input = new Scanner(System.in);
@@ -15,7 +16,7 @@ public class Sequence {
     return answer.equals(yes);
     }
   } 
-
+/** To verify input data. */
 public void input() {
   while (!number.hasNextInt()) {
   System.out.println("It is not a count");
@@ -26,7 +27,7 @@ public void input() {
     count = Integer.parseInt(text);
     }
   }
-
+/** For an array with an undefined number of values. */
 public Sequence() {
   AL = new ArrayList<Integer>();
   Input = new Scanner(System.in);
@@ -35,7 +36,7 @@ public Sequence() {
 public void toArray() {
   AL.add(number);
 }
-
+/** Check for affiliation with positive sequence. */
 public void check() {
   boolean b = true;
   for (int j = 0; j < (AL.size() - 1); j++) {
